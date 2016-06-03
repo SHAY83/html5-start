@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulários</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="cadastro.php" method="POST">
+		   <fieldset>
+		   <legend>Informações pessoais</legend>
+			Nome: <br>
+			<input type="text" name="nome" required autofocus maxlength="5"><br>
+			senha: <br>
+			<input type="password" name="senha"><br>
+			
+			Email:<br>
+			<input type="email" name="email" placeholder="seuemail@gmail.com" autocomplete="on" required><br>
+
+			Data:<br>
+			<input type="date" name="data" min="2000-12-31" max="2015-12-31"><br><br>
+
+			Hora:<br>
+			<input type="time" name="hora"><br><br>
+
+			Mês e ano:<br>
+			<input type="Month" name="Mêseano"><br><br>
+
+			Semana:<br>
+			<input type="Week" name="semana"><br><br>
+
+			Data e hora:<br>
+			<input type="datetime-local" name="data-e-hora"><br><br>
+
+			Mensagem:<br>
+			<textarea name="mensagem" rows="5" cols="30" spellcheck="true"></textarea><br><br>
+			<button type="button" name="click">CLICK-ME</button><br><br>
+
+			Escolha sua primeira refeição:<br>
+			<select name="Alimentos">
+				<optgroup label="Pratos frios">
+				<option value="Salada1">Salada de alface com tomates</option>
+				<option value="Salada2">Rúcula com mussarela</option>
+				<option value="Salada3">Legumes com maionese</option>
+				</optgroup>
+				<optgroup label="Pratos quentes">	
+				<option value="Strogonof">Strogonof</option>
+				<option value="feijoada">Feijoiada</option>
+				<option value="Escondidinho de carne seca">Escondidinho de carne seca</option>
+				</optgroup>
+			</select>
+			<br><br>
+
+			Escolha sua bebida:<br>
+			<input name="bebidas" list="lista-bebidas">
+			<datalist id="lista-bebidas">
+				<option value="Refrigerante">
+				<option value="Bebidas alcoolicas">
+				<option value="Sucos naturais">
+			</datalist>
+			<br><br>
+
+			Imagem:<br>
+			<input type="file" name="imagem"><br>
+			<input type="hidden" name="id"><br>
+
+			URL:<br>
+			<input type="url" name="site"><br><br>
+
+			Pesquise: <br>
+			<input type="search" name="pesquisa"><br><br>
+
+			Telefone:<br>
+			<input type="tel" name="telefone"><br><br>
+
+
+			Dias da semana: <br>
+			<input type="radio" name="dias" value="segunda"checked>Segunda<br>
+			<input type="radio" name="dias" value="terça">Terça<br>
+			<input type="radio" name="dias" value="quarta">Quarta<br>
+			<input type="radio" name="dias" value="quinta">Quinta<br>
+			<input type="radio" name="dias" value="sexta">Sexta<br>
+			<input type="radio" name="dias" value="sábado">Sábado<br>
+			<input type="radio" name="dias" value="domingo">Domingo<br>
+
+			Cores:<br>
+			<input type="checkbox" name="cores" value="verde"checked>Verde<br>
+			<input type="checkbox" name="cores" value="vermelho">Vermelho<br>
+			<input type="checkbox" name="cores" value="azul">Azul<br>
+			<input type="checkbox" name="cores" value="laranja">Laranja<br>
+			<input type="checkbox" name="cores" value="roxo">Roxo<br><br>
+			
+			Quantidade:<br>
+			<input type="number" name="quantidade" min="0" max="500" step="10"><br>
+			<br>
+			<input type="range" name="quantidade"><br><br>
+
+			Cor:<br>
+			<input type="color" name="cor"><br>
+
+			<input type="submit" name="btn-enviar" value="Enviar">
+			</fieldset>
+		</form>
+    </body>
+</html>
+
+
