@@ -3,13 +3,20 @@
 	<head>
 		<title>Formulários</title>
 		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="dec.css">
 	</head>
 	<body>
 		<form action="cadastro.php" method="POST">
-		   <fieldset>
-		   <legend>Informações pessoais</legend>
+
+		<fieldset>
+		<div class ="container">
+		   <h1>Informações pessoais</h1>
+		</div>
+
 			Nome: <br>
-			<input type="text" name="nome" required autofocus maxlength="5"><br>
+			<input type="text" name="nome" required autofocus maxlength="5"  placeholder="digite deu nome"><br>
+
 			senha: <br>
 			<input type="password" name="senha"><br>
 			
@@ -98,7 +105,7 @@
 			<input type="color" name="cor"><br>
 
 			<input type="submit" name="btn-enviar" value="Enviar">
-			</fieldset>
+		</fieldset>
 		</form>
     </body>
 </html>
